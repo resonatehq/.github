@@ -1,11 +1,24 @@
-## 👋 Welcome to the Resonate community on GitHub
+# Resonate HQ
 
 <img src="https://raw.githubusercontent.com/resonatehq/resonate/master/docs/img/echo.png" height="120px">
 
-Resonate is a lightweight durable execution engine made to help you keep your promises. Read all about Resonate in our [main repository](https://github.com/resonatehq/resonate) or...
+Resonate HQ provides Resonate, an implementation of the Distributed Async Await specification and a holistic application development framework for distributed apps.
 
-- 🌍 [Visit our website](https://resonatehq.io/)
-- 📖 [Read our docs](https://docs.resonatehq.io/)
-- 🐦 [Visit our Twitter](https://twitter.com/resonatehqio)
-- 🥳 [Join our Slack and talk with other Resonate users](https://resonatehqcommunity.slack.com)
-- 🔥 [Learn about our Roadmap](https://github.com/resonatehq/resonate/issues/131)
+## Directory
+
+- [Website](https://resonatehq.io/)
+- [Discord](https://resonatehq.io/discord)
+- [Docs](https://docs.resonatehq.io/)
+- [Journal](https://journal.resonatehq.io/)
+- [Twitter](https://twitter.com/resonatehqio)
+- [LinkedIn](https://www.linkedin.com/company/resonatehqio/)
+
+**[Get started with Resonate](https://docs.resonatehq.io/get-started)**
+
+## Resonate component repos
+
+- [Resonate Server](https://github.com/resonatehq/resonate)
+- [Resonate Python SDK](https://github.com/resonatehq/resonate-sdk-py)
+- [Resonate TypeScript SDK](https://github.com/resonatehq/resonate-sdk-ts)
+
+Contributions welcome. Please join the Discord to discuss your contribution.
