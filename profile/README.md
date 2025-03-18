@@ -13,6 +13,7 @@ Resonate HQ provides Resonate, an implementation of the Distributed Async Await 
 - [Twitter](https://twitter.com/resonatehqio)
 - [LinkedIn](https://www.linkedin.com/company/resonatehqio/)
 - [YouTube](https://www.youtube.com/@resonatehqio)
+- [Example applications](https://github.com/resonatehq/awesome-examples)
 
 **[Get started with Resonate](https://docs.resonatehq.io/get-started)**
 
