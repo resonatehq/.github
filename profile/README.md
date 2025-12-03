@@ -43,7 +43,7 @@ But you can also follow or subscribe on these platforms:
 - [LinkedIn](https://www.linkedin.com/company/resonatehqio/)
 - [YouTube](https://www.youtube.com/@resonatehqio)
 
-## Resonate quickstart
+### Resonate quickstart
 
 Resonate has a "zero-dependency" development experience.
 Apart from installing the Resonate SDk into your project, you don't need to worry about any additional components to get started.
@@ -90,3 +90,13 @@ resonate.register("foo", (ctx: Context, arg: string) => {
 ```
 
 Check out the docs for more ways to get started: **[Get started with Resonate](https://docs.resonatehq.io/get-started)**
+
+## Foundational principles
+
+Resonate HQ makes software for other developers to use to build reliable and scalable systems.
+
+The quality of our software is highly tied to:
+
+- our obsession with a "simple" developer experience
+- our use of specifications, protocols, formal modeling, and formal verification
+- our pioneering efforts into Deterministic Simulation Testing
