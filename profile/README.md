@@ -46,7 +46,7 @@ But you can also follow or subscribe on these platforms:
 ## Resonate quickstart
 
 Resonate has a "zero-dependency" development experience.
-Apart installing the Resonate SDk into your project, you don't need to worry about any additional components to get started.
+Apart from installing the Resonate SDk into your project, you don't need to worry about any additional components to get started.
 
 For example, in Python:
 
