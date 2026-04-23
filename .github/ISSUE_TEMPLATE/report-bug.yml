@@ -1,0 +1,71 @@
+name: Report a bug
+description: Report a bug that spans multiple repos or isn't clearly an SDK or server issue
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **If the bug is clearly in one specific repo** — a single SDK, the server, a specific plugin — please file it on that repo instead. Maintainers watch those more closely than the org-level tracker. Use this form for cross-cutting bugs: docs contradicting the SDK, spec ambiguity, server ↔ SDK interaction issues, or anything you can't pin to a single repo.
+
+        For security issues, do not file a public issue — see [SECURITY.md](https://github.com/resonatehq/.github/blob/main/SECURITY.md).
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What's the bug?
+      description: One paragraph. What breaks, what you expected, and why this is cross-cutting rather than a single-repo issue.
+      placeholder: |
+        e.g. docs.resonatehq.io/develop/typescript shows `ctx.run(fn, arg)` but resonate-sdk-ts@0.11.0 requires `ctx.run(fn, [arg])`. Code in docs doesn't compile against the current SDK.
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected
+    attributes:
+      label: Affected repos / surfaces
+      description: List the repos or surfaces involved, with versions where relevant.
+      placeholder: |
+        - resonate-sdk-ts @ 0.11.0
+        - docs.resonatehq.io (page: /develop/typescript, last-updated date if visible)
+        - resonate (server) @ 0.6.2
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducer
+    attributes:
+      label: Reproducer
+      description: Minimal steps to show the bug. Exact commands, input, observed vs expected output.
+      render: bash
+      placeholder: |
+        1. Copy the `ctx.run` snippet from docs.resonatehq.io/develop/typescript
+        2. `npm install @resonatehq/sdk@0.11.0`
+        3. `npx tsc --noEmit` → TS2345: Argument of type 'string' is not assignable to parameter of type '[string]'.
+
+        Expected: compiles.
+        Actual: compile error (above).
+    validations:
+      required: true
+
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: Anything that might matter for reproducing.
+      placeholder: |
+        - OS: macOS 14.5 (arm64)
+        - Node: 22.3.0 (or Python 3.12.4, or Rust 1.81.0)
+        - SDK version(s): @resonatehq/sdk@0.11.0
+        - Resonate server: 0.6.2 (via `brew install resonatehq/tap/resonate`)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmed
+    attributes:
+      label: Before filing
+      options:
+        - label: I searched existing issues on the most-affected repo and on this org-level tracker
+        - label: I confirmed this isn't obviously a single-repo issue (in which case I'd file it on that repo instead)
+        - label: This is not a security issue (if it is, I'll use the SECURITY.md flow)
