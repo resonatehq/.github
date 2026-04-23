@@ -1,0 +1,89 @@
+name: Propose an RFC
+description: Propose a change to the Resonate protocol, spec, or a public SDK surface
+title: "[RFC] "
+labels: ["rfc", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Resonate is spec-first. If your proposal changes the [Distributed Async Await protocol](https://distributed-async-await.io), the [Durable Promise specification](https://github.com/resonatehq/durable-promise-specification), the [Async RPC specification](https://github.com/resonatehq/async-rpc.io), or a public SDK surface shared across languages, start with an RFC here. Single-SDK changes or non-protocol features can go on the SDK repo directly.
+
+  - type: input
+    id: title
+    attributes:
+      label: One-line summary
+      description: What are you proposing, in a single sentence?
+      placeholder: e.g. Add `ctx.cancelPeer(promiseId)` to let a function cancel a sibling durable promise it spawned.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: What surfaces does this change? (select all that apply)
+      multiple: true
+      options:
+        - Distributed Async Await protocol
+        - Durable Promise specification
+        - Async RPC specification
+        - Public SDK surface (TypeScript)
+        - Public SDK surface (Python)
+        - Public SDK surface (Rust)
+        - Server wire protocol
+        - CLI surface
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What's hard, broken, or missing today? Describe the use case, not the proposed solution.
+      placeholder: |
+        e.g. A long-running workflow spawns child promises for parallel work. If the workflow needs to abort early (upstream cancellation, user input), today the only option is to let the children run to completion. There's no primitive for "cancel a sibling I spawned."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What would you change? Include shape of the API / protocol addition, not a full implementation.
+      placeholder: |
+        e.g. Add `ctx.cancelPeer(id: string): Promise<void>` to the SDK Context type. Under the hood: server exposes a new `cancel` verb on the durable-promise wire protocol that transitions the promise to `REJECTED` with a sentinel error.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other options did you weigh, and why is this one better? "None considered" is rarely the right answer.
+      placeholder: |
+        e.g. (a) Let children finish and ignore their results — wastes work and can commit side effects. (b) Use external cancellation token — requires reimplementing the durability guarantee outside Resonate. (c) Add `ctx.scope()` with auto-cancel on scope exit — more powerful but much larger surface change.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Cross-SDK / backward-compat impact
+      description: Which SDKs need parallel work? Any wire-protocol incompatibilities? Any behavior change for existing workflows?
+      placeholder: |
+        e.g. All 3 SDKs need the new method. Wire protocol adds a new verb (backward-compatible — old servers reject the verb, SDK falls back to current behavior with a runtime warning). No change to existing workflows.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: willing
+    attributes:
+      label: Are you willing to help land it?
+      description: RFCs land fastest when the proposer prototypes. Proposal-only ideas take longer.
+      multiple: false
+      options:
+        - "Yes — I'll prototype on one SDK once the shape is agreed"
+        - "Yes — I'll contribute to the spec change but not the SDK code"
+        - "No — proposing only"
+    validations:
+      required: true
