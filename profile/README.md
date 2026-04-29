@@ -123,7 +123,6 @@ The rest of the catalog.
 - [homebrew-tap](https://github.com/resonatehq/homebrew-tap) — `brew install resonatehq/tap/resonate`
 - [templates](https://github.com/resonatehq/templates) — scaffolding templates for the Resonate CLI
 - [design](https://github.com/resonatehq/design) — brand assets and visual guidelines
-- [durable-promise-test-harness](https://github.com/resonatehq/durable-promise-test-harness) — conformance harness for the durable-promise spec
 - [resonate-client-ts](https://github.com/resonatehq/resonate-client-ts) — TypeScript client for async RPC from the browser
 - [gocoro](https://github.com/resonatehq/gocoro) — Go coroutine library used by the legacy server
 
@@ -133,6 +132,7 @@ The rest of the catalog.
 <summary><strong>Legacy</strong></summary>
 
 - [resonate-legacy-server](https://github.com/resonatehq/resonate-legacy-server) — the Go server, maintenance-only; superseded by [resonate](https://github.com/resonatehq/resonate)
+- [legacy-durable-promise-test-harness](https://github.com/resonatehq/legacy-durable-promise-test-harness) — archived; conformance harness paired with the legacy Go server
 
 </details>
 
