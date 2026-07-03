@@ -12,7 +12,7 @@ Thanks for considering a contribution. This repo hosts the org-level defaults (t
 | Improve the docs | [docs.resonatehq.io](https://github.com/resonatehq/docs.resonatehq.io) |
 | Propose a new example app | The [examples org](https://github.com/resonatehq-examples) — see its `CONTRIBUTING.md` |
 | Propose a protocol change | This repo — open an RFC issue (template below) |
-| Discuss the design of a specification | The spec repo ([DAA](https://github.com/resonatehq/distributed-async-await.io), [Durable Promise](https://github.com/resonatehq/durable-promise-specification), [Async RPC](https://github.com/resonatehq/async-rpc.io)) |
+| Discuss the design of a specification | The spec repo ([DAA](https://github.com/resonatehq/distributed-async-await.io), [Resonate Specification](https://github.com/resonatehq/resonate-specification), [Async RPC](https://github.com/resonatehq/async-rpc.io)) |
 
 ## Contributing code
 
@@ -24,7 +24,7 @@ Thanks for considering a contribution. This repo hosts the org-level defaults (t
 
 ## Proposing a protocol or API change (RFC)
 
-Resonate is spec-first. Changes that affect the [Distributed Async Await protocol](https://distributed-async-await.io), the [Durable Promise specification](https://github.com/resonatehq/durable-promise-specification), or any public SDK surface should go through an RFC before code lands.
+Resonate is spec-first. Changes that affect the [Distributed Async Await specification](https://distributed-async-await.io), the [Async RPC specification](https://github.com/resonatehq/async-rpc.io), or any public SDK surface should go through an RFC before code lands.
 
 1. **Open an RFC issue** using the [propose-rfc template](https://github.com/resonatehq/.github/issues/new/choose) here. State the problem, the proposed change, the alternatives considered, and which surfaces the change touches.
 2. **Discuss in the issue.** Maintainers will weigh in within a few business days. Expect questions about the wire format, cross-SDK consistency, and migration path.

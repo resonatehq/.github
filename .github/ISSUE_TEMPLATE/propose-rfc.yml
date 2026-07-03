@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Resonate is spec-first. If your proposal changes the [Distributed Async Await protocol](https://distributed-async-await.io), the [Durable Promise specification](https://github.com/resonatehq/durable-promise-specification), the [Async RPC specification](https://github.com/resonatehq/async-rpc.io), or a public SDK surface shared across languages, start with an RFC here. Single-SDK changes or non-protocol features can go on the SDK repo directly.
+        Resonate is spec-first. If your proposal changes the [Distributed Async Await protocol](https://distributed-async-await.io), the [Async RPC specification](https://github.com/resonatehq/async-rpc.io), the [Resonate Specification](https://github.com/resonatehq/resonate-specification) (the formal Lean 4 abstract machine), or a public SDK surface shared across languages, start with an RFC here. Single-SDK changes or non-protocol features can go on the SDK repo directly.
 
   - type: input
     id: title
@@ -24,7 +24,7 @@ body:
       multiple: true
       options:
         - Distributed Async Await protocol
-        - Durable Promise specification
+        - Resonate Specification (formal, Lean 4)
         - Async RPC specification
         - Public SDK surface (TypeScript)
         - Public SDK surface (Python)

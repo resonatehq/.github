@@ -15,7 +15,7 @@ Use one of these private channels, in order of preference:
    - [`resonatehq/resonate-sdk-rs`](https://github.com/resonatehq/resonate-sdk-rs/security/advisories/new)
    - For other repos (plugins, transports, observability), open a private advisory on the specific repo — every public Resonate repo has the feature enabled.
 2. **If you don't know which repo is affected** — or the issue spans multiple — DM a Resonate maintainer on the [Resonate Discord](https://resonatehq.io/discord). The team is small and a DM reaches us within a day. We'll triage to the right private advisory.
-3. **If the issue is cross-cutting and affects the protocol itself** (Distributed Async Await, Durable Promise, or Async RPC), use the Discord path above — protocol-level issues need coordinated remediation across every SDK that implements the spec.
+3. **If the issue is cross-cutting and affects the protocol itself** (Distributed Async Await, Async RPC, or the formal Lean 4 [Resonate Specification](https://github.com/resonatehq/resonate-specification)), use the Discord path above — protocol-level issues need coordinated remediation across every SDK that implements the spec. The canonical prose Durable Promise spec now lives at [distributed-async-await.io](https://github.com/resonatehq/distributed-async-await.io).
 
 ## What to include
 
@@ -41,7 +41,7 @@ Once a fix has shipped, we publish a security advisory on the affected repo and 
 - Vulnerabilities in published SDK packages (`@resonatehq/sdk`, `resonate-sdk` on PyPI, `resonate-sdk` on crates.io).
 - Vulnerabilities in the `resonate` server binary or its HTTP / gRPC / wire protocols.
 - Vulnerabilities in a plugin or transport adapter that affect code running Resonate.
-- Protocol-level issues in [Distributed Async Await](https://distributed-async-await.io), [Durable Promise](https://github.com/resonatehq/durable-promise-specification), or [Async RPC](https://github.com/resonatehq/async-rpc.io) that have implementation impact.
+- Protocol-level issues in [Distributed Async Await](https://distributed-async-await.io), [Async RPC](https://github.com/resonatehq/async-rpc.io), or the formal [Resonate Specification](https://github.com/resonatehq/resonate-specification) (the Lean 4 executable abstract machine) that have implementation impact. The Durable Promise data model and HTTP API contract are covered under the [Distributed Async Await spec](https://github.com/resonatehq/distributed-async-await.io).
 
 ## What's out of scope
 
