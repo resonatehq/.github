@@ -89,6 +89,7 @@ New to Resonate? Start with the docs, then pick a language.
 ### Specification
 
 - [distributed-async-await.io](https://github.com/resonatehq/distributed-async-await.io) — the programming model Resonate implements, served at [distributed-async-await.io](https://distributed-async-await.io)
+- [resonate-specification](https://github.com/resonatehq/resonate-specification) — the Resonate protocol as an executable abstract machine in Lean 4; machine-checkable ground truth for handler and state-transition semantics (promises, tasks, and schedules)
 
 ### Docs & skills
 
@@ -111,8 +112,9 @@ The rest of the catalog.
 <details>
 <summary><strong>Additional specifications</strong></summary>
 
+- [resonate-specification](https://github.com/resonatehq/resonate-specification) — the Resonate protocol as an executable abstract machine in Lean 4 (promises, tasks, and schedules; handlers P-01..P-06, T-01..T-11, S-01..S-04)
 - [async-rpc.io](https://github.com/resonatehq/async-rpc.io) — Async RPC spec, served at [async-rpc.io](https://async-rpc.io)
-- [durable-promise-specification](https://github.com/resonatehq/durable-promise-specification) — the lower-level durable-promise primitive that the SDKs and server agree on
+- [durable-promise-specification](https://github.com/resonatehq/durable-promise-specification) — legacy; preserved for historical reference; canonical prose spec now lives in [distributed-async-await.io](https://github.com/resonatehq/distributed-async-await.io)
 - [async-await-literature](https://github.com/resonatehq/async-await-literature) — curated papers informing the design
 
 </details>
@@ -138,7 +140,7 @@ The rest of the catalog.
 
 ## Momentum
 
-- **3 published specifications** — [Distributed Async Await](https://distributed-async-await.io) (served), [Async RPC](https://github.com/resonatehq/async-rpc.io), [Durable Promise](https://github.com/resonatehq/durable-promise-specification)
+- **4 published specifications** — [Distributed Async Await](https://distributed-async-await.io) (served), [Async RPC](https://github.com/resonatehq/async-rpc.io), [Resonate Specification](https://github.com/resonatehq/resonate-specification) (Lean 4 executable), [Durable Promise](https://github.com/resonatehq/durable-promise-specification) (legacy)
 - **3 SDKs speaking the same protocol** — TypeScript, Python, Rust
 - **23 Journal posts** at [journal.resonatehq.io](https://journal.resonatehq.io) — patterns, walkthroughs, design rationale
 
