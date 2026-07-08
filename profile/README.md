@@ -15,6 +15,8 @@ This org is the core platform — the SDKs, the server, the protocol spec, and t
 ```bash
 brew install resonatehq/tap/resonate    # the server
 npm  install @resonatehq/sdk            # or: pip install resonate-sdk · cargo add resonate-sdk
+                                        #     go get github.com/resonatehq/resonate-sdk-go
+                                        #     gradle/maven: io.resonatehq:resonate-sdk-java
 ```
 
 [Documentation](https://docs.resonatehq.io) · [Distributed async/await](https://distributed-async-await.io)
@@ -71,7 +73,7 @@ The sleep is durable, too. The generator's position *is* the state.
 New to Resonate? Start with the docs, then pick a language.
 
 - [Documentation](https://docs.resonatehq.io) — install, quickstart, concepts
-- [TypeScript SDK](https://github.com/resonatehq/resonate-sdk-ts) · [Python SDK](https://github.com/resonatehq/resonate-sdk-py) · [Rust SDK](https://github.com/resonatehq/resonate-sdk-rs)
+- [TypeScript SDK](https://github.com/resonatehq/resonate-sdk-ts) · [Python SDK](https://github.com/resonatehq/resonate-sdk-py) · [Rust SDK](https://github.com/resonatehq/resonate-sdk-rs) · [Go SDK](https://github.com/resonatehq/resonate-sdk-go) · [Java SDK](https://github.com/resonatehq/resonate-sdk-java)
 - [Learn by example](https://github.com/resonatehq-examples) — ~75 runnable patterns in the examples org
 
 ## Featured
@@ -81,6 +83,8 @@ New to Resonate? Start with the docs, then pick a language.
 - [resonate-sdk-ts](https://github.com/resonatehq/resonate-sdk-ts) — TypeScript, on npm as `@resonatehq/sdk`
 - [resonate-sdk-py](https://github.com/resonatehq/resonate-sdk-py) — Python, on PyPI as `resonate-sdk`
 - [resonate-sdk-rs](https://github.com/resonatehq/resonate-sdk-rs) — Rust, on crates.io as `resonate-sdk`
+- [resonate-sdk-go](https://github.com/resonatehq/resonate-sdk-go) — Go, pre-release; install with `go get` (no semver tag yet)
+- [resonate-sdk-java](https://github.com/resonatehq/resonate-sdk-java) — Java 21+, on Maven Central as `io.resonatehq:resonate-sdk-java` (pre-1.0)
 
 ### Server
 
@@ -141,7 +145,7 @@ The rest of the catalog.
 ## Momentum
 
 - **4 published specifications** — [Distributed Async Await](https://distributed-async-await.io) (served), [Async RPC](https://github.com/resonatehq/async-rpc.io), [Resonate Specification](https://github.com/resonatehq/resonate-specification) (Lean 4 executable), [Durable Promise](https://github.com/resonatehq/durable-promise-specification) (legacy)
-- **3 SDKs speaking the same protocol** — TypeScript, Python, Rust
+- **5 SDKs speaking the same protocol** — TypeScript, Python, Rust, Go, Java
 - **23 Journal posts** at [journal.resonatehq.io](https://journal.resonatehq.io) — patterns, walkthroughs, design rationale
 
 ## Community
@@ -158,4 +162,4 @@ Every Resonate repository is licensed under [Apache-2.0](./LICENSE). Each repo c
 
 ## Contributing
 
-SDK and server contributions go on the repo where the change lands — `resonate-sdk-ts` / `-py` / `-rs` for SDK work, `resonate` for the server. See [CONTRIBUTING.md](https://github.com/resonatehq/.github/blob/main/CONTRIBUTING.md) for how to contribute code, file bugs, or propose an RFC. To report a bug or propose a change at the org level, open an issue using the templates at [`.github` issues](https://github.com/resonatehq/.github/issues/new/choose). Security issues: see [SECURITY.md](https://github.com/resonatehq/.github/blob/main/SECURITY.md).
+SDK and server contributions go on the repo where the change lands — `resonate-sdk-ts` / `-py` / `-rs` / `-go` / `-java` for SDK work, `resonate` for the server. See [CONTRIBUTING.md](https://github.com/resonatehq/.github/blob/main/CONTRIBUTING.md) for how to contribute code, file bugs, or propose an RFC. To report a bug or propose a change at the org level, open an issue using the templates at [`.github` issues](https://github.com/resonatehq/.github/issues/new/choose). Security issues: see [SECURITY.md](https://github.com/resonatehq/.github/blob/main/SECURITY.md).
